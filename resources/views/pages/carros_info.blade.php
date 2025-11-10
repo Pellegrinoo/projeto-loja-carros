@@ -14,13 +14,13 @@
                 <div class="p-6 md:p-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
                     
                     <div>
-                        <img src="{{ $carro['imagem_url'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-auto object-cover rounded-xl shadow-lg">
+                        <img src="{{ $carro['imagem_url'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-full object-cover rounded-xl shadow-lg">
                     </div>
                     <div>
-                        <img src="{{ $carro['imagem_url2'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-auto object-cover rounded-xl shadow-lg">
+                        <img src="{{ $carro['imagem_url2'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-full object-cover rounded-xl shadow-lg">
                     </div>
                     <div>
-                        <img src="{{ $carro['imagem_url3'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-auto object-cover rounded-xl shadow-lg">
+                        <img src="{{ $carro['imagem_url3'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-full object-cover rounded-xl shadow-lg">
                     </div>
 
                     {{-- 2ª Linha: Informações Principais (Col 1) e Detalhes (Col 2 & 3) --}}

@@ -37,7 +37,7 @@
                             <a href="{{ route('carros.info', $carro['id']) }}" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6 block">
                                 
                                 <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden mb-4">
-                                    <img src="{{ $carro['imagem_url'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-64 object-contain">
+                                    <img src="{{ $carro['imagem_capa'] }}" alt="{{ $carro['modelo'] }}" class="w-full h-64 object-contain">
                                 </div>
                                 
                                 <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">

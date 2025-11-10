@@ -17,7 +17,7 @@
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 @can('access-admin')
-                    <x-nav-link :href="route('dashboard')">
+                    <x-nav-link :href="route('admin')">
                         {{ __('Admin') }}
                     </x-nav-link>
                 @endcan
