@@ -1,11 +1,11 @@
-// database/seeders/DatabaseSeeder.php
-
 <?php
 
-use Illuminate\Database\Seeder;
-use Database\Seeders\CarrosSeeder; // ⬅️ Não esqueça do Import!
+namespace Database\Seeders;
 
-class DatabaseSeeder extends Seeder
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class CarrosSeeder extends Seeder
 {
    /**
      * Run the database seeds.
