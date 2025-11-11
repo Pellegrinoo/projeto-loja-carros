@@ -28,7 +28,7 @@
                             </button>
                         </form>
                         
-                        <a href="{{ route('dashboard') }}" class="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:border-indigo-900 focus:ring ring-indigo-300 disabled:opacity-25 transition ease-in-out duration-150">
+                        <a href="{{ route('admin.viewCadastrar') }}" class="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:border-indigo-900 focus:ring ring-indigo-300 disabled:opacity-25 transition ease-in-out duration-150">
                             {{ __('Novo carro') }}
                         </a>
                     </div>
@@ -112,13 +112,12 @@
                                         {{ $carro->cambio }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                        <a href="{{ route('dashboard', $carro) }}" class="text-indigo-600 hover:text-indigo-900 dark:text-indigo-400 dark:hover:text-indigo-600 mr-3">
+                                        <a href="{{ route('admin.infoEdit', $carro->id) }}" class="text-indigo-600 hover:text-indigo-900 dark:text-indigo-400 dark:hover:text-indigo-600 mr-3">
                                             {{ __('Editar') }}
                                         </a>
 
-                                        <form action="{{ route('dashboard', $carro) }}" method="POST" class="inline-block">
+                                        <form action="{{ route('admin.excluirCarro', $carro->id) }}" method="POST" class="inline-block">
                                             @csrf
-                                            @method('DELETE')
                                             <button type="submit" class="text-red-600 hover:text-red-900 dark:text-red-400 dark:hover:text-red-600" onclick="return confirm('Tem certeza que deseja excluir este item?')">
                                                 {{ __('Excluir') }}
                                             </button>

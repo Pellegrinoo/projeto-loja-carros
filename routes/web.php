@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\admin\CrudController;
+use App\Http\Controllers\EditCarroController;
 use Illuminate\Support\Facades\Route;
 
 /*Route::get('/', function () {
@@ -35,7 +36,16 @@ Route::middleware('auth')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [CrudController::class, 'crudInicial'])->name('admin');
     Route::get('/admin/modelo', [CrudController::class, 'filtraModelo'])->name('filtraModelo');
+    Route::get('/admin/edit/{id}', [EditCarroController::class, 'infoCarroEdit'])->name('admin.infoEdit');
+    Route::post('/admin/edit', [EditCarroController::class, 'editarCarro'])->name('admin.editarCarro');
+    Route::post('/admin/excluir/{id}', [EditCarroController::class, 'excluirCarro'])->name('admin.excluirCarro');
+    Route::get('/admin/cadastrar', function () {return view('admin.cadastrarCarro');})->name('admin.viewCadastrar');
+    Route::post('/admin/cadastrar', [EditCarroController::class, 'cadastrarCarro'])->name('admin.cadastrarCarro');
+    
 });
+
+
+
 
 
 
