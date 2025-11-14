@@ -9,6 +9,7 @@ Manual para rodar o projeto:
 1- Após clonar o projeto, rodar os seguintes comandos no terminal:
    Configuração banco de dados:
     - php artisan migrate
+    
     - php artisan db:seed
     
     Configuração Vite:
