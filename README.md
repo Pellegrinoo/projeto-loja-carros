@@ -10,6 +10,7 @@ Manual para rodar o projeto:
    Configuração banco de dados:
     - php artisan migrate
     - php artisan db:seed
+    
     Configuração Vite:
     - npm install
 
