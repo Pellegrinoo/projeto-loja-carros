@@ -18,6 +18,7 @@ Manual para rodar o projeto:
     - npm install
 
 2 - Para iniciar projeto:
+
     Executar esse comendo:
     - php artisan serve
 
